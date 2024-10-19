@@ -80,7 +80,7 @@ export default function Home() {
           fullname: edition,
         })
         setStudents((prev) =>
-          prev.filter((student) => student.id !== matchedStudent.id)
+          prev.filter((student) => student.id === matchedStudent.id)
         );
         console.log(response.data)
         setStudents((prev) => [...prev, response.data]);
