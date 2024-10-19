@@ -1,16 +1,3 @@
 {
-  "students": [
-    {
-      "id": "0121",
-      "fullname": "qwqw"
-    },
-    {
-      "id": "c171",
-      "fullname": "zaq"
-    },
-    {
-      "id": "be93",
-      "fullname": "all"
-    }
-  ]
+  "students": []
 }
