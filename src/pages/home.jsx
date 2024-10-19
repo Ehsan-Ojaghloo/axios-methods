@@ -79,6 +79,9 @@ export default function Home() {
         const response = await axios.patch(`http://localhost:3000/students/${matchedStudent.id}`, {
           fullname: edition,
         })
+        setStudents((prev) =>
+          prev.filter((student) => student.id !== matchedStudent.id)
+        );
         console.log(response.data)
         setStudents((prev) => [...prev, response.data]);
         setFullname("");
